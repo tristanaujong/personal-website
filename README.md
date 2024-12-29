@@ -1,9 +1,9 @@
 # To-Do List:
 
-## Make drop-down menu functionality for header link "More"
-## Create Home page
-## Create Gym page
-## Create Car page
+- Make drop-down menu functionality for header link "More"
+- Create Home page
+- Create Gym page
+- Create Car page
 
 # Getting Started with Create React App
 
