@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sfpro: ['SF-Pro'],
-        sfprodisplaythin: ['SF-Pro-Display-Thin']
+        sfprodisplaythin: ['SF-Pro-Display-Thin'],
+        sfprodisplaybold: ['SF-Pro-Display-Bold'],
       },
     },
   },

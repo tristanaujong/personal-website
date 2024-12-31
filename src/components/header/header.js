@@ -4,20 +4,20 @@ import '../../pages/gym-page';
 
 function Header() {
     return (
-      <div class="flex justify-center p-3.5 fixed top-0 w-full text-xl font-sfprodisplaythin">
+      <div class="bg-white flex justify-center p-3.5 fixed top-0 w-full text-2xl font-sfprodisplaythin">
         <nav class="space-x-10">
-            <a href="/" class="hover:underline">
+            <Link to="/" class="hover:underline">
                 Home
-            </a>
-            <a href="/gym" class="hover:underline">
+            </Link>
+            <Link to="/gym" class="hover:underline">
                 Gym
-            </a>
-            <a href="/cars" class="hover:underline">
+            </Link>
+            <Link to="/cars" class="hover:underline">
                 Cars
-            </a>
-            <a href="https://www.google.com/" class="hover:underline">
+            </Link>
+            <Link to="/" class="hover:underline">
                 More
-            </a>
+            </Link>
         </nav>
       </div>
     );
