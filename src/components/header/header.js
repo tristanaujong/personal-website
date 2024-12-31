@@ -4,7 +4,7 @@ import '../../pages/gym-page';
 
 function Header() {
     return (
-      <div class="bg-white flex justify-center p-3.5 fixed top-0 w-full text-2xl font-sfprodisplaythin">
+      <div class="bg-neutral-900 flex justify-center p-3.5 fixed top-0 w-full text-2xl text-white font-sfprodisplaythin">
         <nav class="space-x-10">
             <Link to="/" class="hover:underline">
                 Home

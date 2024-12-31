@@ -4,6 +4,8 @@ import '../App.css';
 import Gym from './gym-page';
 import Cars from './cars-page';
 import TristanIcon from '../images/home-page-photos/tristan_icon.png';
+import LinkedinIcon from '../images/home-page-photos/linkedin_icon.png';
+import InstagramIcon from '../images/home-page-photos/instagram_icon.png';
 
 const Home = () => {
   return (
@@ -26,7 +28,7 @@ const Home = () => {
           <span class="font-sfpro">of A&M's </span>
           <span class="font-sfprodisplaybold">Engineering Teacher Assistant Organization (TAO).</span>
         </p>
-        <p class="text-base">
+        <p class="text-base mb-4">
           <span class="font-sfpro">Previously interned at </span>
           <span class="font-sfprodisplaybold">iCode </span>
           <span class="font-sfpro">and </span>
@@ -34,9 +36,14 @@ const Home = () => {
           <span class="font-sfpro">incoming </span>
           <span class="font-sfprodisplaybold">SWE Intern @ Lockheed Martin - Missiles & Fire Control.</span>
         </p>
-      </div>
-      <div>
-        
+        <div class="flex flex-row">
+          <a href="https://www.linkedin.com/in/tristan-lee-aujong" class="w-10 mr-2">
+            <img src={LinkedinIcon} alt="Linkedin icon"></img>
+          </a>
+          <a href="https://www.instagram.com/tristan_mahjong/" class="w-10 mr-2">
+            <img src={InstagramIcon} alt="Linkedin icon"></img>
+          </a>
+        </div>
       </div>
     </div>
   );

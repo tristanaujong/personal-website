@@ -2,7 +2,7 @@ import '../App.css';
 
 function GymPage() {
   return (
-    <div className="header">
+    <div className="my-24">
       Gym
     </div>
   );

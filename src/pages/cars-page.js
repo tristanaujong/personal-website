@@ -2,7 +2,7 @@ import '../App.css';
 
 function CarsPage() {
   return (
-    <div className="header">
+    <div className="my-24">
       Cars
     </div>
   );
