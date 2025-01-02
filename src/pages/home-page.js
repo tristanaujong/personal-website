@@ -22,7 +22,8 @@ const copyEmail = async () => {
 
 const Home = () => {
   return (
-    <div class="flex flex-row container px-4 mx-auto max-w-7xl my-24 items-center ">
+    <div>
+    <div class="flex flex-row container px-4 mx-auto max-w-7xl mt-24 items-center ">
       <div class="mr-12">
         <img class="w-[300px]" src={TristanIcon} alt="tristan_icon.png" />
       </div>
@@ -62,6 +63,8 @@ const Home = () => {
           </button>
         </div>
       </div>
+    </div>
+    <hr class="flex items-center border-t border-black w-3/4 mx-auto my-12" />
     </div>
   );
 };
