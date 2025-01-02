@@ -52,10 +52,10 @@ const Home = () => {
         </p>
         {/* Social Icons */}
         <div class="flex flex-row items-center">
-          <a href="https://www.linkedin.com/in/tristan-lee-aujong" class="w-8 mr-4 hover:opacity-75">
+          <a href="https://www.linkedin.com/in/tristan-lee-aujong" target="_blank" rel="noopener noreferrer" class="w-8 mr-4 hover:opacity-75">
             <img src={LinkedinIcon} alt="Linkedin icon"></img>
           </a>
-          <a href="https://www.instagram.com/tristan_mahjong/" class="w-8 mr-4 hover:opacity-75">
+          <a href="https://www.instagram.com/tristan_mahjong/" target="_blank" rel="noopener noreferrer" class="w-8 mr-4 hover:opacity-75">
             <img src={InstagramIcon} alt="Instagram icon"></img>
           </a>
           <button onClick={copyEmail}>
