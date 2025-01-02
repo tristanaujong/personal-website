@@ -6,6 +6,19 @@ import Cars from './cars-page';
 import TristanIcon from '../images/home-page-photos/tristan_icon.png';
 import LinkedinIcon from '../images/home-page-photos/linkedin_icon.png';
 import InstagramIcon from '../images/home-page-photos/instagram_icon.png';
+import EmailIcon from '../images/home-page-photos/email_icon.png';
+import React from "react";
+
+const copyEmail = async () => {
+  const email = "tristanaujong@gmail.com"
+
+  try {
+    await navigator.clipboard.writeText(email);
+    alert("Email copied to clipboard!");
+  } catch (err) {
+    console.error("Failed to copy email: ", err);
+  }
+};
 
 const Home = () => {
   return (
@@ -14,7 +27,7 @@ const Home = () => {
         <img class="w-[300px]" src={TristanIcon} alt="tristan_icon.png" />
       </div>
       <div class="flex-col">
-        <h1 class="text-4xl mb-4">
+        <h1 class="text-4xl mb-2">
           <span class="font-sfpro">Hi! </span>
           <span class="font-sfprodisplaybold">I'm Tristan.</span>
         </h1>
@@ -36,13 +49,17 @@ const Home = () => {
           <span class="font-sfpro">incoming </span>
           <span class="font-sfprodisplaybold">SWE Intern @ Lockheed Martin - Missiles & Fire Control.</span>
         </p>
-        <div class="flex flex-row">
-          <a href="https://www.linkedin.com/in/tristan-lee-aujong" class="w-10 mr-2">
+        {/* Social Icons */}
+        <div class="flex flex-row items-center">
+          <a href="https://www.linkedin.com/in/tristan-lee-aujong" class="w-8 mr-4 hover:opacity-75">
             <img src={LinkedinIcon} alt="Linkedin icon"></img>
           </a>
-          <a href="https://www.instagram.com/tristan_mahjong/" class="w-10 mr-2">
-            <img src={InstagramIcon} alt="Linkedin icon"></img>
+          <a href="https://www.instagram.com/tristan_mahjong/" class="w-8 mr-4 hover:opacity-75">
+            <img src={InstagramIcon} alt="Instagram icon"></img>
           </a>
+          <button onClick={copyEmail}>
+            <img src={EmailIcon} alt="Email icon" class="w-8 mr-3 hover:opacity-75"></img>
+          </button>
         </div>
       </div>
     </div>
