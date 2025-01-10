@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from '../components/header/header'
+import Header from '../components/header/header';
+import WorkExperience from '../components/home-page/work-experience';
 import '../App.css';
 import Gym from './gym-page';
 import Cars from './cars-page';
@@ -9,6 +10,7 @@ import InstagramIcon from '../images/home-page-photos/instagram_icon.png';
 import EmailIcon from '../images/home-page-photos/email_icon.png';
 import React from "react";
 
+/* Copy email function */
 const copyEmail = async () => {
   const email = "tristanaujong@gmail.com"
 
@@ -20,10 +22,11 @@ const copyEmail = async () => {
   }
 };
 
+/* Home Page */
 const Home = () => {
   return (
-    <div>
-    <div class="flex flex-row container px-4 mx-auto max-w-7xl mt-24 items-center ">
+  <div class="">
+    <div class="flex flex-row container px-4 mx-auto max-w-7xl mt-24 items-center">
       <div class="mr-12">
         <img class="w-[300px]" src={TristanIcon} alt="tristan_icon.png" />
       </div>
@@ -64,11 +67,18 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <hr class="flex items-center border-t border-black w-3/4 mx-auto my-12" />
+    <hr class="flex items-center border-t border-black w-9/12 mx-auto my-12" />
+    <div class="container flex flex-col mx-auto items-center">
+      <h1 class="font-sfprodisplaybold text-4xl mb-10">
+        Work Experience
+      </h1>
+      <WorkExperience/>
     </div>
+  </div>
   );
 };
 
+/* App Layout */
 function HomePage() {
   return (
       <div className="header">
