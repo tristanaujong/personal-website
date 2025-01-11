@@ -10,7 +10,6 @@ import InstagramIcon from '../images/home-page-photos/instagram_icon.png';
 import EmailIcon from '../images/home-page-photos/email_icon.png';
 import iCodeIcon from '../images/home-page-photos/icodeschool_logo.jpg';
 import TAOIcon from '../images/home-page-photos/engr_tao_logo.jpg';
-import Quote from '../images/home-page-photos/quote.png';
 import React from "react";
 
 /* Copy email function */
@@ -70,10 +69,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <div>
-      <img src={Quote} alt="quote.png" class="flex mx-auto w-[400px]"/>
-    </div>
-    <hr class="flex items-center border-t border-black w-9/12 mx-auto mt-4 mb-8" />
+    <hr class="flex items-center border-t border-black w-9/12 mx-auto my-12" />
     <div class="container flex flex-col mx-auto items-center">
       <h1 class="font-sfprodisplaybold text-4xl mb-10">
         Relevant Experience
