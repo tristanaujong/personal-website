@@ -91,6 +91,7 @@ const Home = () => {
       />
       </div>
     </div>
+    <hr class="flex items-center border-t border-black w-9/12 mx-auto my-8" />
   </div>
   );
 };
