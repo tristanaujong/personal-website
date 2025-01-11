@@ -8,6 +8,8 @@ import TristanIcon from '../images/home-page-photos/tristan_icon.png';
 import LinkedinIcon from '../images/home-page-photos/linkedin_icon.png';
 import InstagramIcon from '../images/home-page-photos/instagram_icon.png';
 import EmailIcon from '../images/home-page-photos/email_icon.png';
+import iCodeIcon from '../images/home-page-photos/icodeschool_logo.jpg';
+import TAOIcon from '../images/home-page-photos/engr_tao_logo.jpg';
 import React from "react";
 
 /* Copy email function */
@@ -70,9 +72,24 @@ const Home = () => {
     <hr class="flex items-center border-t border-black w-9/12 mx-auto my-12" />
     <div class="container flex flex-col mx-auto items-center">
       <h1 class="font-sfprodisplaybold text-4xl mb-10">
-        Work Experience
+        Relevant Experience
       </h1>
-      <WorkExperience/>
+      <div class="flow-root">
+      <WorkExperience class="float-left" image={iCodeIcon} company="iCode" location=", Southlake, TX" 
+        title="Computer Science STEAM Technical Lead Intern" 
+        b1="Led various coding camps and exposed 30+ students to numerous applications of programming" 
+        b2="Utilized HTML, CSS, and bootstrap technology to teach front-end web development" 
+        b3="Data analysis and Python 3 skills used for drone programming challenges"
+        dates="May 2024 - August 2024"
+      />
+      <WorkExperience class="float-left" image={TAOIcon} company="Engineering Teacher’s Assistant Organization" location=", College Station, TX" 
+        title="Software Development Intern" 
+        b1="Developed a website for TAMU engineering students to access resources, review material, links, etc." 
+        b2="Built to support 5,000+ members of TAO" 
+        b3="Utilized Next.JS, Tailwind CSS, and Typescript technologies"
+        dates="March 2024 - September 2024"
+      />
+      </div>
     </div>
   </div>
   );
