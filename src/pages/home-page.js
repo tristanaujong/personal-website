@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../components/header/header';
 import WorkExperience from '../components/home-page/work-experience';
+import Projects from '../components/home-page/projects';
 import '../App.css';
 import Gym from './gym-page';
 import Cars from './cars-page';
@@ -10,6 +11,9 @@ import InstagramIcon from '../images/home-page-photos/instagram_icon.png';
 import EmailIcon from '../images/home-page-photos/email_icon.png';
 import iCodeIcon from '../images/home-page-photos/icodeschool_logo.jpg';
 import TAOIcon from '../images/home-page-photos/engr_tao_logo.jpg';
+import TAOLogo from '../images/home-page-photos/engr_tao_icon.png';
+import MaroonRidesIcon from '../images/home-page-photos/maroonrides_icon.png';
+import TurbulencePredictorIcon from '../images/home-page-photos/turbulencepredictor_icon.png';
 import React from "react";
 
 /* Copy email function */
@@ -92,6 +96,16 @@ const Home = () => {
       </div>
     </div>
     <hr class="flex items-center border-t border-black w-9/12 mx-auto my-8" />
+    <div class="container flex flex-col mx-auto items-center">
+      <h1 class="font-sfprodisplaybold text-4xl mb-8">
+        Projects I've Worked On
+      </h1>
+      <div class="flex flex-row flex-wrap justify-center mb-16">
+        <Projects name="Maroon Rides" image={MaroonRidesIcon} link="https://maroonrides.app/"/>
+        <Projects name="TAO Website" image={TAOLogo} link="https://engrtao.tech/"/>
+        <Projects name="Turbulence Predictor" image={TurbulencePredictorIcon} link="https://devpost.com/software/turbulence-predictor"/>
+      </div>
+    </div>
   </div>
   );
 };
